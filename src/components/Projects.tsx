@@ -52,44 +52,47 @@ const projects = [
 const Projects = () => {
   return (
     <div className="projects-grid">
-      {projects.map((project) => (
-        <article key={project.name} className="project-card">
-          <div className="project-topline">
-            <span>{project.role}</span>
-            <span>{project.period}</span>
-          </div>
-          <h3 className="project-title">{project.name}</h3>
-          <p className="project-desc">{project.description}</p>
-          <ul className="project-details">
-            {project.details.map((detail, idx) => (
-              <li key={idx}>{detail}</li>
-            ))}
-          </ul>
-          
-          <div className="project-tags" aria-label={`${project.name} technologies`}>
-            {project.tags.map((tag) => (
-              <span key={tag}>{tag}</span>
-            ))}
-          </div>
-
-          {project.links && project.links.length > 0 && (
-            <div className="project-links">
-              {project.links.map(link => (
-                <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="project-link">
-                  {link.label === 'GitHub' ? (
-                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                  ) : (
-                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                  )}
-                  <span>{link.label}</span>
-                </a>
+      {projects.map((project) => {
+        const projectSlug = project.name.split(' ')[0].toLowerCase().replace(/[^a-z0-9]/g, '');
+        return (
+          <article key={project.name} id={projectSlug} className="project-card">
+            <div className="project-topline">
+              <span>{project.role}</span>
+              <span>{project.period}</span>
+            </div>
+            <h3 className="project-title">{project.name}</h3>
+            <p className="project-desc">{project.description}</p>
+            <ul className="project-details">
+              {project.details.map((detail, idx) => (
+                <li key={idx}>{detail}</li>
+              ))}
+            </ul>
+            
+            <div className="project-tags" aria-label={`${project.name} technologies`}>
+              {project.tags.map((tag) => (
+                <span key={tag}>{tag}</span>
               ))}
             </div>
-          )}
-        </article>
-      ))}
+
+            {project.links && project.links.length > 0 && (
+              <div className="project-links">
+                {project.links.map(link => (
+                  <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="project-link">
+                    {link.label === 'GitHub' ? (
+                      <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    ) : (
+                      <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    )}
+                    <span>{link.label}</span>
+                  </a>
+                ))}
+              </div>
+            )}
+          </article>
+        );
+      })}
     </div>
-  )
+  );
 }
 
 export default Projects
