@@ -68,6 +68,16 @@
   text-transform: uppercase;
 }
 
+.hero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  background-color: rgba(15, 118, 110, 0.08);
+  border-radius: 999px;
+  border: 1px solid rgba(15, 118, 110, 0.15);
+  margin-bottom: 24px;
+}
+
 .hero h1 {
   max-width: 820px;
   font-size: clamp(3rem, 7vw, 5.8rem);
@@ -284,6 +294,37 @@ h2 {
   padding: 7px 10px;
   font-size: 0.86rem;
   font-weight: 700;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.project-tags span:hover,
+.skill-chip:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.project-link:hover {
+  color: var(--accent-color);
+  transform: translateY(-1px);
 }
 
 .skills-grid {
