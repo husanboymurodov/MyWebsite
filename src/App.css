@@ -23,12 +23,20 @@
   justify-content: center;
   width: 42px;
   height: 42px;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 800;
-  color: var(--accent-color);
-  background: #ffffff;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #ffffff;
+  background: var(--accent-color);
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(15, 118, 110, 0.3);
+  color: #ffffff;
 }
 
 .nav-links {
