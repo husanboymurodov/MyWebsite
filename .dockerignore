@@ -5,7 +5,3 @@ dist
 README.md
 Dockerfile
 .dockerignore
-package-lock.json
-eslint.config.js
-tsconfig.*
-vite.config.ts
