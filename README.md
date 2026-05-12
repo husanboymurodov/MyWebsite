@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# Husan Boymurodov | Software Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance portfolio website built with **React**, **TypeScript**, and **Vite**. This site showcases my engineering projects, professional experience, and technical skills.
 
-Currently, two official plugins are available:
+## 🚀 Recent Updates
+- **New Projects Integrated**: Added FitHub (Full-Stack Fitness Tracker) and OrderSmart (ML Delivery Predictor).
+- **UI/UX Optimization**: Implemented smooth hover animations, soft shadows, and a modern "badge" style for hero callouts.
+- **Branding**: Customized the "HB" logo and favicon to match a consistent professional identity.
+- **Deployment Ready**: Fully configured for Google Cloud Run with multi-stage Docker builds.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+- **Frontend**: React 19, TypeScript, Vanilla CSS (Modern CSS variables)
+- **Tooling**: Vite, ESLint
+- **Deployment**: Docker, Google Cloud Run
 
-## React Compiler
+## 📁 Key Projects
+1. **FitHub**: Full-stack MERN application for fitness tracking. Includes Interactive dashboards (Chart.js) and external API integrations.
+2. **OrderSmart**: Machine Learning dashboard using XGBoost to predict delivery timings, deployed via Hugging Face.
+3. **Customer Churn Prediction**: Classification model for telecom retention analysis.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 Local Development
 
-## Expanding the ESLint configuration
+1. **Clone and Install**:
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+2. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+3. **Build for Production**:
+   ```bash
+   npm run build
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ☁️ Deployment (Google Cloud Run)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project is containerized using Docker for easy deployment to GCP.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Build and Deploy**:
+   ```bash
+   gcloud run deploy portfolio-website \
+     --source . \
+     --region asia-southeast1 \
+     --allow-unauthenticated
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*Built with ❤️ by Husan Boymurodov.*
