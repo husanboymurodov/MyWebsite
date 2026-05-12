@@ -17,26 +17,26 @@
   width: 100%;
 }
 
-.logo {
+.logo-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 42px;
   height: 42px;
-  border: 2px solid var(--accent-color);
   border-radius: 10px;
-  font-size: 1.1rem;
-  font-weight: 900;
-  color: #ffffff;
-  background: var(--accent-color);
-  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.2);
+  overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.logo:hover {
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-link:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(15, 118, 110, 0.3);
-  color: #ffffff;
 }
 
 .nav-links {

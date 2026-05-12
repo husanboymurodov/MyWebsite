@@ -1,5 +1,6 @@
 import './App.css'
 import Projects from './components/Projects'
+import logo from './assets/logo.png'
 
 const skills = [
   'Python',
@@ -51,7 +52,9 @@ function App() {
     <div className="app">
       <header className="header">
         <nav className="container" aria-label="Primary navigation">
-          <a className="logo" href="#hero" aria-label="Husan Boymurodov home">HB</a>
+          <a className="logo-link" href="#hero" aria-label="Husan Boymurodov home">
+            <img src={logo} alt="HB Logo" className="logo-img" />
+          </a>
           <ul className="nav-links">
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
