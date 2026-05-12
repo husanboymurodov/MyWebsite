@@ -3,36 +3,43 @@ import Projects from './components/Projects'
 import logo from './assets/logo.png'
 
 const skills = [
-  'Python',
+  'JavaScript',
   'TypeScript',
-  'Node.js',
+  'Python',
+  'Next.js',
   'React',
-  'REST APIs',
+  'Node.js',
+  'Express.js',
   'Supabase',
   'MongoDB',
   'SQL',
+  'REST APIs',
+  'DevOps',
+  'Google Cloud Platform (GCP)',
+  'Docker',
+  'CI/CD',
+  'Git',
+  'n8n',
+  'Hugging Face',
+  'Machine Learning',
+  'XGBoost',
   'scikit-learn',
   'pandas',
   'NumPy',
-  'Git',
-  'GCP',
-  'CI/CD',
-  'n8n',
-  'Tableau',
-  'Power BI',
+  'Automation',
 ]
 
 const experience = [
   {
     role: 'Software Engineer Intern',
-    company: 'AI Sales DR',
-    location: 'Kuala Lumpur, Malaysia',
+    company: 'AI Sales Dr Pte. Ltd.',
+    location: 'Singapore (Remote)',
     dates: 'Feb 2026 - May 2026',
     points: [
-      'Built production frontend and backend features with TypeScript and Python for a web application environment.',
-      'Improved backend automation workflows in n8n by restructuring logic nodes and removing redundant API calls.',
-      'Enhanced API integrations between backend services and Supabase with stronger validation and data consistency.',
-      'Resolved application bugs and regressions while supporting Git, GCP, staging, and deployment workflows.',
+      'Engineered and maintained scalable full-stack web applications using JavaScript/TypeScript, Next.js, and Node.js.',
+      'Designed and integrated robust REST APIs between backend services and Supabase, ensuring data consistency and strong validation.',
+      'Orchestrated and deployed backend infrastructure on Google Cloud Platform (GCP), utilizing Docker and establishing automated CI/CD pipelines.',
+      'Implemented complex workflow automations using n8n to streamline business processes and optimize backend logic.',
     ],
   },
   {
@@ -41,8 +48,8 @@ const experience = [
     location: 'Tashkent, Uzbekistan',
     dates: 'Mar 2022 - Jul 2022',
     points: [
-      'Managed WordPress-based web infrastructure and improved usability for university web operations.',
-      'Diagnosed software and hardware issues for faculty and staff, reducing day-to-day technical disruptions.',
+      'Developed and managed university web infrastructure using WordPress, improving global site performance and accessibility.',
+      'Diagnosed and resolved hardware/software technical disruptions for faculty, ensuring continuous operational uptime.',
     ],
   },
 ]
@@ -52,10 +59,11 @@ function App() {
     <div className="app">
       <header className="header">
         <nav className="container" aria-label="Primary navigation">
-          <a className="logo-link" href="#hero" aria-label="Husan Boymurodov home">
+          <a className="logo-link" href="#about" aria-label="Husan Boymurodov home">
             <img src={logo} alt="HB Logo" className="logo-img" />
           </a>
           <ul className="nav-links">
+            <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -65,48 +73,38 @@ function App() {
       </header>
 
       <main>
-        <section id="hero" className="hero">
-          <p className="eyebrow">Available for internship and junior software engineering roles from May 2026</p>
-          <h1>Husan Boymurodov</h1>
-          <p className="tagline">
-            Computer Science student and software engineer intern building full-stack web applications,
-            backend automation, API integrations, and machine learning solutions.
-          </p>
-          <div className="hero-actions">
-            <a href="#contact" className="btn-primary">Contact Me</a>
-            <a href="#projects" className="btn-secondary">View Projects</a>
+        <section id="about" className="hero">
+          <h1>Hi, I am Husan Boymurodov</h1>
+          <p className="tagline">I am a Software Engineer.</p>
+          
+          <div className="section-copy" style={{ maxWidth: '800px', marginBottom: '2.5rem' }}>
+            <p>
+              Final-year Computer Science student at Universiti Malaya with hands-on experience in software engineering, 
+              focusing on backend systems and full-stack application development. Skilled in building scalable web 
+              applications using JavaScript/TypeScript, Next.js, Node.js, Supabase, and MongoDB, with experience in API 
+              design and integration. Proficient in Python for backend services and data-related tasks. Experienced 
+              with automation tools such as n8n and cloud/DevOps platforms, including Google Cloud Platform (GCP).
+            </p>
+            <p>
+              Recently, I worked as a Software Engineer Intern at AI Sales Dr Pte. Ltd., where I built and maintained 
+              full-stack web applications, designed and integrated APIs, managed Supabase databases, deployed services 
+              on GCP, and implemented workflow automations using n8n.
+            </p>
+            <p>
+              Previously, I worked as an IT intern at British Management University in Tashkent, where I developed 
+              the university website using WordPress and provided technical support, including hardware troubleshooting.
+            </p>
+            <p>
+              My interests lie in Software Engineering, particularly in backend development and building efficient, 
+              scalable full-stack systems. I am seeking to grow in software engineering roles and contribute to 
+              impactful, well-engineered solutions.
+            </p>
           </div>
-          <dl className="hero-stats" aria-label="Profile highlights">
-            <div>
-              <dt>Degree</dt>
-              <dd>Bachelor of Computer Science</dd>
-            </div>
-            <div>
-              <dt>Focus</dt>
-              <dd>Information Systems</dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>Kuala Lumpur, Malaysia</dd>
-            </div>
-          </dl>
-        </section>
 
-        <section id="about" className="section-grid">
-          <div>
-            <p className="section-label">Profile</p>
-            <h2>Software engineering with data and automation depth</h2>
-          </div>
-          <div className="section-copy">
-            <p>
-              I am a Computer Science student at the University of Malaya with hands-on internship
-              experience across production web features, backend workflow automation, API integrations,
-              database-backed applications, and applied machine learning projects.
-            </p>
-            <p>
-              My current focus is full-stack development using TypeScript, Python, Node.js, React,
-              Supabase, MongoDB, and cloud deployment workflows.
-            </p>
+          <div className="hero-actions">
+            <a href="https://github.com/husanboymurodov" target="_blank" rel="noopener noreferrer" className="btn-secondary">GitHub</a>
+            <a href="https://www.linkedin.com/in/husanboymurodov/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">Get Resume</a>
           </div>
         </section>
 

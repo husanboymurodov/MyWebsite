@@ -31,7 +31,8 @@ const projects = [
     ],
     tags: ['Python', 'XGBoost', 'Scikit-learn', 'Pandas', 'Gradio', 'Hugging Face'],
     links: [
-      { url: 'https://github.com/husanboymurodov/delivery-predictor', label: 'GitHub' }
+      { url: 'https://github.com/husanboymurodov/delivery-predictor', label: 'GitHub' },
+      { url: 'https://husanboymurodov-delivery-predictor.hf.space/', label: 'Live App' }
     ]
   },
   {
@@ -45,7 +46,9 @@ const projects = [
       'Trained and evaluated Logistic Regression and XGBoost classification models.',
     ],
     tags: ['Python', 'Classification', 'XGBoost', 'Data Cleaning'],
-    links: []
+    links: [
+      { url: 'https://husanboymurodov-customer-churn-predictor.hf.space/', label: 'Live App' }
+    ]
   },
 ]
 
