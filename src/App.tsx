@@ -79,25 +79,17 @@ function App() {
           
           <div className="section-copy" style={{ maxWidth: '800px', marginBottom: '2.5rem' }}>
             <p>
-              Final-year Computer Science student at Universiti Malaya with hands-on experience in software engineering, 
-              focusing on backend systems and full-stack application development. Skilled in building scalable web 
-              applications using JavaScript/TypeScript, Next.js, Node.js, Supabase, and MongoDB, with experience in API 
-              design and integration. Proficient in Python for backend services and data-related tasks. Experienced 
-              with automation tools such as n8n and cloud/DevOps platforms, including Google Cloud Platform (GCP).
+              I am a final-year Computer Science student at Universiti Malaya specializing in backend systems and 
+              full-stack development. I build scalable applications using TypeScript, Next.js, Node.js, and 
+              Google Cloud Platform (GCP).
             </p>
             <p>
-              Recently, I worked as a Software Engineer Intern at AI Sales Dr Pte. Ltd., where I built and maintained 
-              full-stack web applications, designed and integrated APIs, managed Supabase databases, deployed services 
-              on GCP, and implemented workflow automations using n8n.
+              Recently, as a Software Engineer Intern at AI Sales Dr, I engineered production APIs, managed cloud 
+              infrastructure on GCP, and automated complex workflows with n8n to optimize business processes.
             </p>
             <p>
-              Previously, I worked as an IT intern at British Management University in Tashkent, where I developed 
-              the university website using WordPress and provided technical support, including hardware troubleshooting.
-            </p>
-            <p>
-              My interests lie in Software Engineering, particularly in backend development and building efficient, 
-              scalable full-stack systems. I am seeking to grow in software engineering roles and contribute to 
-              impactful, well-engineered solutions.
+              I focus on building efficient, high-performance systems and am currently seeking software engineering 
+              roles where I can contribute to impactful, well-engineered solutions.
             </p>
           </div>
 
@@ -181,7 +173,7 @@ function App() {
 
       <footer className="footer">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Husan Boymurodov. Built with React and TypeScript.</p>
+          <p>&copy; {new Date().getFullYear()} Husan Boymurodov.</p>
         </div>
       </footer>
     </div>

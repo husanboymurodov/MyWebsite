@@ -32,6 +32,7 @@ const projects = [
     tags: ['Python', 'XGBoost', 'Scikit-learn', 'Pandas', 'Gradio', 'Hugging Face'],
     links: [
       { url: 'https://github.com/husanboymurodov/delivery-predictor', label: 'GitHub' },
+      { url: 'https://huggingface.co/spaces/husanboymurodov/delivery-predictor/tree/main', label: 'HF Code' },
       { url: 'https://husanboymurodov-delivery-predictor.hf.space/', label: 'Live App' }
     ]
   },
@@ -47,6 +48,7 @@ const projects = [
     ],
     tags: ['Python', 'Classification', 'XGBoost', 'Data Cleaning'],
     links: [
+      { url: 'https://huggingface.co/spaces/husanboymurodov/customer-churn-predictor/tree/main', label: 'HF Code' },
       { url: 'https://husanboymurodov-customer-churn-predictor.hf.space/', label: 'Live App' }
     ]
   },

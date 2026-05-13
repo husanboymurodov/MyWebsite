@@ -4,7 +4,7 @@
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: rgba(248, 250, 252, 0.92);
+  background-color: rgba(15, 23, 42, 0.92);
   backdrop-filter: blur(12px);
   z-index: 100;
   border-bottom: 1px solid var(--border-color);
@@ -36,7 +36,7 @@
 
 .logo-link:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(15, 118, 110, 0.3);
+  box-shadow: 0 6px 15px rgba(56, 189, 248, 0.3);
 }
 
 .nav-links {
@@ -80,9 +80,9 @@
   display: inline-flex;
   align-items: center;
   padding: 6px 14px;
-  background-color: rgba(15, 118, 110, 0.08);
+  background-color: rgba(56, 189, 248, 0.08);
   border-radius: 999px;
-  border: 1px solid rgba(15, 118, 110, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.15);
   margin-bottom: 24px;
 }
 
@@ -123,13 +123,13 @@
 
 .btn-primary {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: #0f172a;
   border: 1px solid var(--accent-color);
 }
 
 .btn-secondary,
 .contact-links a {
-  background-color: #ffffff;
+  background-color: var(--card-bg);
   color: var(--text-color);
   border: 1px solid var(--border-color);
 }
@@ -160,8 +160,18 @@
 .education-card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
-  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.06);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+}
+
+.hero-stats div:hover,
+.timeline-item:hover,
+.project-card:hover,
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  border-color: var(--accent-color);
 }
 
 .hero-stats div {
@@ -297,7 +307,7 @@ h2 {
 .project-tags span,
 .skill-chip {
   border: 1px solid var(--border-color);
-  background-color: #ffffff;
+  background-color: var(--card-bg);
   color: var(--text-color);
   border-radius: 999px;
   padding: 7px 10px;
@@ -309,7 +319,7 @@ h2 {
 .project-tags span:hover,
 .skill-chip:hover {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: #0f172a;
   border-color: var(--accent-color);
 }
 
