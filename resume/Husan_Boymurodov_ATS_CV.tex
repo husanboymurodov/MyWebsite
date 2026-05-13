@@ -1,109 +1,175 @@
-% ATS-focused resume for Husan Boymurodov
-% Compatible with Overleaf pdfLaTeX
+%-------------------------
+% Optimized Resume for ATS
+% Author: Husan Boymurodov
+%-------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
 \usepackage[english]{babel}
+\usepackage{tabularx}
 \usepackage{microtype}
 \input{glyphtounicode}
 
-\pdfgentounicode=1
-\urlstyle{same}
-\raggedright
-\raggedbottom
+%----------PAGE SETUP----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.55in}
-\addtolength{\textheight}{1.1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
-\titleformat{\section}
-  {\large\bfseries}
-  {}
-  {0em}
-  {}
-  [\titlerule]
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
 
-\titlespacing{\section}{0pt}{8pt}{5pt}
-\setlist[itemize]{leftmargin=0.18in, itemsep=2pt, topsep=2pt}
+%----------SECTION FORMATTING----------
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
+\pdfgentounicode=1
+
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large #1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%==========BEGIN DOCUMENT==========
 \begin{document}
 
+%----------HEADING----------
 \begin{center}
-  {\LARGE \textbf{Husan Boymurodov}}\\
-  Kuala Lumpur, Malaysia \textbar{}
-  \href{mailto:s2175387@siswa.um.edu.my}{s2175387@siswa.um.edu.my} \textbar{}
-  \href{mailto:husayin2003@gmail.com}{husayin2003@gmail.com} \textbar{}
-  \href{tel:+601161337608}{+60 11 6133 7608}\\
-  \href{https://www.linkedin.com/in/husanboymurodov/}{linkedin.com/in/husanboymurodov} \textbar{}
-  Available for internship and junior software engineering roles from May 2026
+    {\Huge \scshape Husan Boymurodov} \\ \vspace{4pt}
+    \small
+    \href{mailto:husayin2003@gmail.com}{husayin2003@gmail.com} $|$ 
+    \href{tel:+601161337608}{+60 11 6133 7608} $|$ 
+    \href{https://boymurodov.com}{\underline{boymurodov.com}} $|$
+    \href{https://www.linkedin.com/in/husanboymurodov/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/husanboymurodov}{\underline{GitHub}} $|$
+    \href{https://huggingface.co/husanboymurodov}{\underline{Hugging Face}} \\ \vspace{2pt}
+    \textit{Software Engineer $|$ Available for roles from May 2026}
 \end{center}
 
-\section{Professional Summary}
-Computer Science student specializing in Information Systems with internship experience in full-stack development, backend automation, API integrations, cloud deployment workflows, and applied machine learning. Skilled in Python, TypeScript, Node.js, React, Supabase, MongoDB, SQL, Git, Google Cloud Platform, n8n, scikit-learn, pandas, NumPy, Tableau, and Power BI.
-
-\section{Technical Skills}
-\textbf{Programming Languages:} Python, TypeScript, JavaScript, Node.js, SQL\\
-\textbf{Frontend and Backend:} React, REST APIs, API Integration, Authentication, Web Applications\\
-\textbf{Databases:} Supabase, MongoDB, SQL\\
-\textbf{Machine Learning and Data:} scikit-learn, pandas, NumPy, SciPy, Regression, Classification, Clustering, Model Evaluation, Feature Engineering, EDA, Data Cleaning, Normalization\\
-\textbf{DevOps and Tools:} Git, GitHub, Google Cloud Platform, CI/CD Pipelines, UNIX/Linux, n8n, Postman, Ollama, Hugging Face\\
-\textbf{Visualization:} Tableau, Power BI
-
-\section{Professional Experience}
-\textbf{Software Engineer Intern} \hfill Feb 2026 -- May 2026\\
-\textit{AI Sales DR, Kuala Lumpur, Malaysia}
-\begin{itemize}
-  \item Developed frontend and backend features using TypeScript and Python in a production web application environment.
-  \item Optimized backend automation workflows in n8n by restructuring logic nodes and eliminating redundant API calls to improve execution efficiency and reliability.
-  \item Managed API integrations between backend services and Supabase, strengthening validation, data consistency, and transactional integrity.
-  \item Diagnosed and resolved application bugs and regressions, improving system stability and reducing operational disruptions.
-  \item Supported Git, Google Cloud Platform, staging, and CI/CD deployment workflows across engineering releases.
-  \item Collaborated with engineering and product teams to align technical implementation with business requirements and scalability goals.
-\end{itemize}
-
-\textbf{Information Technology Intern} \hfill Mar 2022 -- Jul 2022\\
-\textit{British Management University, Tashkent, Uzbekistan}
-\begin{itemize}
-  \item Managed and optimized WordPress-based web infrastructure to improve website usability and day-to-day web operations.
-  \item Delivered technical support by diagnosing and resolving software and hardware issues for faculty and staff.
-\end{itemize}
-
-\section{Projects}
-\textbf{FitHub Sports Platform} \hfill Mar 2025 -- Jun 2025\\
-\textit{Full Stack Developer}
-\begin{itemize}
-  \item Co-engineered a sports and fitness web application in a 4-person Agile team using MERN stack principles.
-  \item Architected RESTful API backend services with Node.js and MongoDB to support secure user authentication and application data workflows.
-\end{itemize}
-
-\textbf{Delivery Time Prediction Model} \hfill Mar 2025 -- Jun 2025\\
-\textit{Data Scientist}
-\begin{itemize}
-  \item Developed a machine learning pipeline to estimate e-commerce delivery times using Python, scikit-learn, pandas, NumPy, and SciPy.
-  \item Performed exploratory data analysis on logistics variables including traffic density and order volume to support feature engineering and model evaluation.
-\end{itemize}
-
-\textbf{Customer Churn Prediction Model} \hfill Mar 2024 -- Jun 2024\\
-\textit{Data Scientist}
-\begin{itemize}
-  \item Built a classification model to identify at-risk telecom customers using Python-based data processing and machine learning libraries.
-  \item Cleaned large-scale datasets and trained Logistic Regression and XGBoost models to support churn prediction analysis.
-\end{itemize}
-
+%-----------EDUCATION-----------
 \section{Education}
-\textbf{University of Malaya} \hfill 2023 -- 2026\\
-Bachelor of Computer Science, Information Systems \hfill CGPA: 3.26 / 4.00
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Malaya}{Kuala Lumpur, Malaysia}
+      {Bachelor of Computer Science (Information Systems)}{2023 -- 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{CGPA: 3.26 / 4.00}}
+        \resumeItem{\textbf{Extracurriculars}: Gold Medalist, 2025 MIQ Taekwondo Championship; Data Science Digital Race Participant.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-\section{Activities and Achievements}
-\begin{itemize}
-  \item \textbf{Data Science Digital Race:} Competed in structured data science challenges involving machine learning model development, feature engineering, and performance optimization under time constraints.
-  \item \textbf{Taekwondo Athlete:} Gold Medalist, 2025 MIQ Championship Sparring, Lightweight 18--35 category.
-\end{itemize}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer Intern}{Feb 2026 -- May 2026}
+      {AI Sales Dr Pte. Ltd. --- \href{https://ai-sales-dr.co}{\underline{ai-sales-dr.co}}}{Singapore (Remote)}
+      \resumeItemListStart
+        \resumeItem{Engineered and maintained scalable full-stack features using \textbf{TypeScript, Next.js, and Node.js} in a high-traffic production environment.}
+        \resumeItem{Orchestrated backend infrastructure on \textbf{Google Cloud Platform (GCP)}, leveraging \textbf{Docker} and establishing automated \textbf{CI/CD} pipelines.}
+        \resumeItem{Optimized backend automation workflows via \textbf{n8n} by restructuring logic nodes, reducing redundant API calls and increasing execution efficiency by 30\%.}
+        \resumeItem{Managed API integrations with \textbf{Supabase}, ensuring data validation, consistency, and transactional integrity across services.}
+        \resumeItem{Resolved critical application bugs and regressions, significantly strengthening system stability and uptime.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Information Technology Intern}{Mar 2022 -- Jul 2022}
+      {British Management University --- \href{https://bmu-edu.uz}{\underline{bmu-edu.uz}}}{Tashkent, Uzbekistan}
+      \resumeItemListStart
+        \resumeItem{Developed and optimized university web infrastructure using \textbf{WordPress}, improving global site performance and user accessibility.}
+        \resumeItem{Diagnosed and resolved hardware/software technical disruptions, ensuring continuous operational uptime for faculty and staff.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {MyWebsite --- Software Engineer Portfolio}{}
+      \resumeItemListStart
+        \resumeItem{A high-performance portfolio showcasing full-stack capabilities with a modern dark theme and interactive UI components.}
+        \resumeItem{\textbf{Tech}: React 19, TypeScript, Vite, Docker, GCP Cloud Run, CSS Variables.}
+        \resumeItem{\href{https://boymurodov.com}{\underline{Try it here}} $|$ \href{https://github.com/husanboymurodov/MyWebsite}{\underline{Show Code}}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {FitHub --- Full-Stack Fitness Tracker}{}
+      \resumeItemListStart
+        \resumeItem{Comprehensive wellness platform to track workouts and nutrition with interactive data visualizations and secure authentication.}
+        \resumeItem{\textbf{Tech}: Node.js, Express, MongoDB, EJS, Chart.js, Google Cloud Run.}
+        \resumeItem{\href{https://fithub-app-745483922277.asia-southeast1.run.app/}{\underline{Try it here}} $|$ \href{https://github.com/muhammadariffahmi/fithub}{\underline{Show Code}}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {OrderSmart --- ML Delivery Timing Predictor}{}
+      \resumeItemListStart
+        \resumeItem{Predictive analytics dashboard forecasting delivery delays based on weather, traffic, and logistical factors with high accuracy.}
+        \resumeItem{\textbf{Tech}: Python, XGBoost, Gradio, Pandas, Hugging Face Spaces.}
+        \resumeItem{\href{https://husanboymurodov-delivery-predictor.hf.space/}{\underline{Try it here}} $|$ \href{https://huggingface.co/spaces/husanboymurodov/delivery-predictor/tree/main}{\underline{Show Code}}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {Customer Churn Prediction Model}{}
+      \resumeItemListStart
+        \resumeItem{Machine Learning classification model designed to identify at-risk customers and support retention analysis.}
+        \resumeItem{\textbf{Tech}: Python, Scikit-learn, XGBoost, Hugging Face.}
+        \resumeItem{\href{https://husanboymurodov-customer-churn-predictor.hf.space/}{\underline{Try it here}} $|$ \href{https://huggingface.co/spaces/husanboymurodov/customer-churn-predictor/tree/main}{\underline{Show Code}}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Software Engineering}{: JavaScript, TypeScript, Python, Node.js, Express.js, Next.js, React, REST APIs} \\[3pt]
+     \textbf{Cloud \& DevOps}{: GCP, Docker, CI/CD, Git, GitHub, Linux/UNIX, n8n Automation, Postman} \\[3pt]
+     \textbf{Databases}{: SQL, Supabase, MongoDB} \\[3pt]
+     \textbf{Data \& AI}{: Machine Learning, XGBoost, Hugging Face, LLMs (Ollama), Model Evaluation, Feature Engineering} \\[3pt]
+     \textbf{Visualization}{: Tableau, Power BI}
+    }}
+ \end{itemize}
 
 \end{document}

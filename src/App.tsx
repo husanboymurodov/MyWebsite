@@ -1,6 +1,5 @@
 import './App.css'
 import Projects from './components/Projects'
-import logo from './assets/logo.png'
 
 const skills = [
   'JavaScript',
@@ -55,11 +54,10 @@ function App() {
     <div className="app">
       <header className="header">
         <nav className="container" aria-label="Primary navigation">
-          <a className="logo-link" href="#about" aria-label="Husan Boymurodov home">
-            <img src={logo} alt="HB Logo" className="logo-img" />
-          </a>
+          <a className="logo" href="#about" aria-label="Husan Boymurodov home">HB</a>
           <ul className="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -158,8 +156,7 @@ function App() {
             and automation work from May 2026.
           </p>
           <div className="contact-links">
-            <a href="mailto:s2175387@siswa.um.edu.my">University Email</a>
-            <a href="mailto:husayin2003@gmail.com">Personal Email</a>
+            <a href="mailto:husayin2003@gmail.com">Email</a>
             <a href="tel:+601161337608">Phone</a>
             <a href="https://www.linkedin.com/in/husanboymurodov/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://github.com/husanboymurodov" target="_blank" rel="noopener noreferrer">GitHub</a>
