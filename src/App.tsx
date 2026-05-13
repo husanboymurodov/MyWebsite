@@ -1,5 +1,6 @@
 import './App.css'
 import Projects from './components/Projects'
+import profileImg from './assets/profile.jpg'
 
 const skills = [
   'JavaScript',
@@ -77,31 +78,39 @@ function App() {
 
       <main>
         <section id="about" className="hero">
-          <h1>Hi, I am Husan Boymurodov</h1>
-          <p className="tagline">I am a Software Engineer.</p>
-          
-          <div className="section-copy" style={{ maxWidth: '800px', marginBottom: '2.5rem' }}>
-            <p>
-              I am a final-year Computer Science student at Universiti Malaya specializing in backend systems and 
-              full-stack development. I build scalable applications using TypeScript, Next.js, Node.js, and 
-              Google Cloud Platform (GCP).
-            </p>
-            <p>
-              Recently, as a Software Engineer Intern at AI Sales Dr, I engineered production APIs, managed cloud 
-              infrastructure on GCP, and automated complex workflows with n8n to optimize business processes. 
-              Beyond engineering, I have demonstrated leadership by coordinating multiple academic courses, 
-              facilitating technical sessions and mentoring peers.
-            </p>
-            <p>
-              I focus on building efficient, high-performance systems and am currently seeking software engineering 
-              roles where I can contribute to impactful, well-engineered solutions.
-            </p>
-          </div>
+          <div className="hero-content">
+            <div className="hero-text">
+              <h1>Hi, I am Husan Boymurodov</h1>
+              <p className="tagline">I am a Software Engineer.</p>
+              
+              <div className="section-copy" style={{ maxWidth: '800px', marginBottom: '2.5rem' }}>
+                <p>
+                  I am a final-year Computer Science student at Universiti Malaya specializing in backend systems and 
+                  full-stack development. I build scalable applications using TypeScript, Next.js, Node.js, and 
+                  Google Cloud Platform (GCP).
+                </p>
+                <p>
+                  Recently, as a Software Engineer Intern at AI Sales Dr, I engineered production APIs, managed cloud 
+                  infrastructure on GCP, and automated complex workflows with n8n to optimize business processes. 
+                  Beyond engineering, I have demonstrated leadership by coordinating multiple academic courses, 
+                  facilitating technical sessions and mentoring peers.
+                </p>
+                <p>
+                  I focus on building efficient, high-performance systems and am currently seeking software engineering 
+                  roles where I can contribute to impactful, well-engineered solutions.
+                </p>
+              </div>
 
-          <div className="hero-actions">
-            <a href="https://github.com/husanboymurodov" target="_blank" rel="noopener noreferrer" className="btn-secondary">GitHub</a>
-            <a href="https://www.linkedin.com/in/husanboymurodov/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">Get Resume</a>
+              <div className="hero-actions">
+                <a href="https://github.com/husanboymurodov" target="_blank" rel="noopener noreferrer" className="btn-secondary">GitHub</a>
+                <a href="https://www.linkedin.com/in/husanboymurodov/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">Get Resume</a>
+              </div>
+            </div>
+            
+            <div className="hero-image-container">
+              <img src={profileImg} alt="Husan Boymurodov" className="hero-image" />
+            </div>
           </div>
         </section>
 
