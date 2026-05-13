@@ -55,7 +55,40 @@ const experience = [
     points: [
       'Developed and managed university web infrastructure using WordPress, improving global site performance and accessibility.',
       'Diagnosed and resolved hardware/software technical disruptions for faculty, ensuring continuous operational uptime.',
+      'Volunteered at administrative meetings on IT and communications, providing technical insights for institutional planning.',
+      'Provided multimedia support for faculty, including setup and troubleshooting of laptops, printers, and presentation devices.',
     ],
+  },
+]
+
+const volunteering = [
+  {
+    role: 'Student Facilitator',
+    organization: '“El-Yurt Umidi” Foundation',
+    location: 'Tashkent, Uzbekistan',
+    dates: 'Sep 2025',
+    description: 'Assisted in welcoming and orienting newly awarded scholarship recipients. Facilitated registration, guided introductory sessions, and ensured smooth logistical communication between staff and participants.',
+  },
+  {
+    role: 'Mini Incubator Program Participant',
+    organization: 'Shine Club INCEIF',
+    location: 'Kuala Lumpur, Malaysia',
+    dates: 'Oct 2024 - Dec 2024',
+    description: 'Completed an intensive program on the startup ecosystem and venture capital. Gained practical exposure to early-stage financing, market validation, and investment strategy through expert-led workshops.',
+  },
+  {
+    role: 'Multimedia & Technology Volunteer',
+    organization: 'UMISA (UM International Students\' Association)',
+    location: 'Kuala Lumpur, Malaysia',
+    dates: 'Oct 2024',
+    description: 'Supported the Multimedia and Technology department during the "Walking Tales" orientation event, helping first-year international students adapt to the university environment.',
+  },
+  {
+    role: 'Technical Support Volunteer',
+    organization: 'British Management University (Various Events)',
+    location: 'Tashkent, Uzbekistan',
+    dates: 'Apr 2022 - Jun 2022',
+    description: 'Provided help desk and technical assistance for major international events including the Digital Inclusiveness Seminar (Jeonbuk National University/KOICA), BMU Model United Nations, Career Day (supporting Beeline, Deloitte, Artel), and the WAGE Program.',
   },
 ]
 
@@ -70,6 +103,7 @@ function App() {
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -114,18 +148,87 @@ function App() {
           </div>
         </section>
 
-        <section id="education" className="section-grid">
-          <div>
-            <p className="section-label">Education</p>
-            <h2>University of Malaya</h2>
-          </div>
-          <div className="education-card">
-            <h3>Bachelor of Computer Science, Information Systems</h3>
-            <p>2023 - 2026 | CGPA: 3.26 / 4.00</p>
-            <ul>
-              <li>Data Science Digital Race participant, focused on ML model development and feature engineering.</li>
-              <li>Gold medalist, 2025 MIQ Championship Taekwondo Sparring, Lightweight 18-35 category.</li>
-            </ul>
+        <section id="education">
+          <p className="section-label">Education</p>
+          <h2>Academic Journey</h2>
+          
+          <div className="education-timeline">
+            {/* University of Malaya */}
+            <div className="education-item section-grid">
+              <div>
+                <h3>University of Malaya</h3>
+                <div className="ranking-badge">
+                  <div className="ranking-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 15l-2 5L9 9l11 4-5 2zm0 0l4 5 1-11L3 11l5 2z"/></svg>
+                  </div>
+                  <div className="ranking-info">
+                    <span className="rank-value">#58 Worldwide</span>
+                    <span className="rank-source">QS World Rankings 2026</span>
+                  </div>
+                </div>
+                <div className="scholarship-tag">
+                  <span className="star-icon">★</span>
+                  <span>EYUF Scholarship Holder</span>
+                </div>
+              </div>
+              <div className="education-card">
+                <div className="education-card-header">
+                  <h4>Bachelor of Computer Science, Information Systems</h4>
+                  <span>2023 - 2026</span>
+                </div>
+                <p className="education-grade">Current CGPA: 3.26 / 4.00</p>
+                <ul>
+                  <li><strong>El-Yurt Umidi Foundation (EYUF) Scholar</strong>: Awarded a prestigious full scholarship for undergraduate studies abroad.</li>
+                  <li>Data Science Digital Race participant, focused on ML model development and feature engineering.</li>
+                  <li>Gold medalist, 2025 MIQ Championship Taekwondo Sparring, Lightweight 18-35 category.</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* BMU */}
+            <div className="education-item section-grid" style={{ marginTop: '2rem' }}>
+              <div>
+                <h3>British Management University</h3>
+                <div className="scholarship-tag">
+                  <span className="star-icon">★</span>
+                  <span>Full Scholarship</span>
+                </div>
+              </div>
+              <div className="education-card">
+                <div className="education-card-header">
+                  <h4>Information Technology</h4>
+                  <span>2021 - 2022</span>
+                </div>
+                <ul>
+                  <li><strong>Full Scholarship</strong>: Awarded a maximum merit-based scholarship (50%) combined with a full need-based scholarship for the remaining portion.</li>
+                  <li><strong>Silver Medalist</strong>: Recognized for outstanding academic performance during the first academic year.</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Presidential School */}
+            <div className="education-item section-grid" style={{ marginTop: '2rem' }}>
+              <div>
+                <h3>Presidential School in Tashkent</h3>
+                <div className="scholarship-tag" style={{ background: 'rgba(56, 189, 248, 0.1)', color: 'var(--accent-color)', borderColor: 'rgba(56, 189, 248, 0.2)' }}>
+                  <span className="star-icon">★</span>
+                  <span>Silver Medalist</span>
+                </div>
+              </div>
+              <div className="education-card">
+                <div className="education-card-header">
+                  <h4>High School Diploma, AS & A Levels</h4>
+                  <span>2019 - 2021</span>
+                </div>
+                <p className="education-grade">Grade: 5.0 / 5.0</p>
+                <ul>
+                  <li><strong>Pioneer Graduate</strong>: One of the first graduates of the prestigious Presidential School in Tashkent.</li>
+                  <li><strong>STEAM Curriculum</strong>: Intensive study of Science, Technology, Engineering, Arts, and Mathematics following Cambridge standards.</li>
+                  <li><strong>Silver Medalist</strong>: Awarded a Silver Medal upon graduation for exceptional academic achievement.</li>
+                  <li>Journalism Club Volunteer: Contributed to school publications and media activities.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -156,6 +259,23 @@ function App() {
           <p className="section-label">Projects</p>
           <h2>Selected Projects</h2>
           <Projects />
+        </section>
+
+        <section id="volunteering">
+          <p className="section-label">Volunteering & Leadership</p>
+          <h2>Community Involvement</h2>
+          <div className="volunteering-grid">
+            {volunteering.map((item) => (
+              <div className="volunteer-card" key={`${item.role}-${item.organization}`}>
+                <div className="volunteer-header">
+                  <h3>{item.role}</h3>
+                  <span className="volunteer-dates">{item.dates}</span>
+                </div>
+                <p className="volunteer-org">{item.organization} | {item.location}</p>
+                <p className="volunteer-desc">{item.description}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section id="skills">
