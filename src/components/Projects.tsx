@@ -30,7 +30,7 @@ const projects = [
     ],
     tags: ['Node.js', 'MongoDB', 'Bootstrap 5', 'Chart.js', 'Docker', 'Google Cloud Run'],
     links: [
-      { url: 'https://github.com/muhammadariffahmi/fithub', label: 'GitHub' },
+      { url: 'https://github.com/husanboymurodov/FitHub', label: 'GitHub' },
       { url: 'https://fithub-app-745483922277.asia-southeast1.run.app', label: 'Live App' }
     ]
   },

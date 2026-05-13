@@ -24,6 +24,15 @@ const skills = [
   'Automation',
 ]
 
+const softSkills = [
+  'Leadership',
+  'Project Management',
+  'Public Speaking',
+  'Technical Mentoring',
+  'Problem Solving',
+  'Collaborative Teamwork',
+]
+
 const experience = [
   {
     role: 'Software Engineer Intern',
@@ -79,7 +88,9 @@ function App() {
             </p>
             <p>
               Recently, as a Software Engineer Intern at AI Sales Dr, I engineered production APIs, managed cloud 
-              infrastructure on GCP, and automated complex workflows with n8n to optimize business processes.
+              infrastructure on GCP, and automated complex workflows with n8n to optimize business processes. 
+              Beyond engineering, I have demonstrated leadership by coordinating multiple academic courses, 
+              facilitating technical sessions and mentoring peers.
             </p>
             <p>
               I focus on building efficient, high-performance systems and am currently seeking software engineering 
@@ -146,6 +157,14 @@ function App() {
               <span className="skill-chip" key={skill}>{skill}</span>
             ))}
           </div>
+
+          <p className="section-label" style={{ marginTop: '3rem' }}>Core Strengths</p>
+          <h2>Soft Skills</h2>
+          <div className="skills-grid">
+            {softSkills.map((skill) => (
+              <span className="skill-chip" key={skill}>{skill}</span>
+            ))}
+          </div>
         </section>
 
         <section id="contact">
@@ -166,7 +185,7 @@ function App() {
 
       <footer className="footer">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Husan Boymurodov.</p>
+          <p>&copy; {new Date().getFullYear()} Husan Boymurodov</p>
         </div>
       </footer>
     </div>
