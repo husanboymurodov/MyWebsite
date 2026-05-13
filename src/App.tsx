@@ -22,10 +22,6 @@ const skills = [
   'n8n',
   'Hugging Face',
   'Machine Learning',
-  'XGBoost',
-  'scikit-learn',
-  'pandas',
-  'NumPy',
   'Automation',
 ]
 
@@ -100,6 +96,21 @@ function App() {
           </div>
         </section>
 
+        <section id="education" className="section-grid">
+          <div>
+            <p className="section-label">Education</p>
+            <h2>University of Malaya</h2>
+          </div>
+          <div className="education-card">
+            <h3>Bachelor of Computer Science, Information Systems</h3>
+            <p>2023 - 2026 | CGPA: 3.26 / 4.00</p>
+            <ul>
+              <li>Data Science Digital Race participant, focused on ML model development and feature engineering.</li>
+              <li>Gold medalist, 2025 MIQ Championship Taekwondo Sparring, Lightweight 18-35 category.</li>
+            </ul>
+          </div>
+        </section>
+
         <section id="experience">
           <p className="section-label">Experience</p>
           <h2>Professional Experience</h2>
@@ -136,21 +147,6 @@ function App() {
             {skills.map((skill) => (
               <span className="skill-chip" key={skill}>{skill}</span>
             ))}
-          </div>
-        </section>
-
-        <section id="education" className="section-grid">
-          <div>
-            <p className="section-label">Education</p>
-            <h2>University of Malaya</h2>
-          </div>
-          <div className="education-card">
-            <h3>Bachelor of Computer Science, Information Systems</h3>
-            <p>2023 - 2026 | CGPA: 3.26 / 4.00</p>
-            <ul>
-              <li>Data Science Digital Race participant, focused on ML model development and feature engineering.</li>
-              <li>Gold medalist, 2025 MIQ Championship Taekwondo Sparring, Lightweight 18-35 category.</li>
-            </ul>
           </div>
         </section>
 

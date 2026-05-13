@@ -1,5 +1,22 @@
 const projects = [
   {
+    name: 'MyWebsite – Software Engineer Portfolio',
+    role: 'Full Stack Developer',
+    period: '2026',
+    description: 'A modern, high-performance portfolio website built to showcase engineering projects and professional experience.',
+    details: [
+      'Developed a responsive, accessible frontend using React 19 and TypeScript.',
+      'Implemented a sleek dark theme with CSS variables and smooth interactive animations.',
+      'Configured containerized deployment using Docker and Google Cloud Run with automated CI/CD.',
+      'Optimized site for SEO and performance, achieving near-perfect scores on Lighthouse.'
+    ],
+    tags: ['React', 'TypeScript', 'Vite', 'Docker', 'Google Cloud Run', 'CSS'],
+    links: [
+      { url: 'https://github.com/husanboymurodov/MyWebsite', label: 'GitHub' },
+      { url: 'https://boymurodov.com', label: 'Live App' }
+    ]
+  },
+  {
     name: 'FitHub – Full-Stack Fitness Tracker',
     role: 'Full Stack Developer',
     period: '2024 - 2025',
@@ -31,7 +48,6 @@ const projects = [
     ],
     tags: ['Python', 'XGBoost', 'Scikit-learn', 'Pandas', 'Gradio', 'Hugging Face'],
     links: [
-      { url: 'https://github.com/husanboymurodov/delivery-predictor', label: 'GitHub' },
       { url: 'https://huggingface.co/spaces/husanboymurodov/delivery-predictor/tree/main', label: 'HF Code' },
       { url: 'https://husanboymurodov-delivery-predictor.hf.space/', label: 'Live App' }
     ]
