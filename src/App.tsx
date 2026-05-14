@@ -111,9 +111,9 @@ function App() {
       </header>
 
       <main>
-        <section id="about" className="hero">
-          <div className="hero-content">
-            <div className="hero-text">
+        <section id="about" className="about">
+          <div className="about-content">
+            <div className="about-text">
               <h1>Hi, I am Husan Boymurodov</h1>
               <p className="tagline">I am a Software Engineer.</p>
               
@@ -135,16 +135,17 @@ function App() {
                 </p>
               </div>
 
-              <div className="hero-actions">
+              <div className="about-actions">
                 <a href="https://github.com/husanboymurodov" target="_blank" rel="noopener noreferrer" className="btn-secondary">GitHub</a>
                 <a href="https://www.linkedin.com/in/husanboymurodov/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
                 <a href="https://t.me/HusanBoymurodov" target="_blank" rel="noopener noreferrer" className="btn-secondary">Telegram</a>
+                <a href="https://wa.me/601161337608" target="_blank" rel="noopener noreferrer" className="btn-secondary">WhatsApp</a>
                 <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">Get Resume</a>
               </div>
             </div>
             
-            <div className="hero-image-container">
-              <img src={profileImg} alt="Husan Boymurodov" className="hero-image" />
+            <div className="about-image-container">
+              <img src={profileImg} alt="Husan Boymurodov" className="about-image" />
             </div>
           </div>
         </section>
@@ -307,6 +308,7 @@ function App() {
           <div className="contact-links">
             <a href="mailto:husayin2003@gmail.com">Email</a>
             <a href="tel:+601161337608">Phone</a>
+            <a href="https://wa.me/601161337608" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             <a href="https://www.linkedin.com/in/husanboymurodov/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://github.com/husanboymurodov" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://t.me/HusanBoymurodov" target="_blank" rel="noopener noreferrer">Telegram</a>
