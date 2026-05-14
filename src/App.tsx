@@ -138,6 +138,7 @@ function App() {
               <div className="hero-actions">
                 <a href="https://github.com/husanboymurodov" target="_blank" rel="noopener noreferrer" className="btn-secondary">GitHub</a>
                 <a href="https://www.linkedin.com/in/husanboymurodov/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
+                <a href="https://t.me/HusanBoymurodov" target="_blank" rel="noopener noreferrer" className="btn-secondary">Telegram</a>
                 <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">Get Resume</a>
               </div>
             </div>
@@ -308,6 +309,7 @@ function App() {
             <a href="tel:+601161337608">Phone</a>
             <a href="https://www.linkedin.com/in/husanboymurodov/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://github.com/husanboymurodov" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://t.me/HusanBoymurodov" target="_blank" rel="noopener noreferrer">Telegram</a>
           </div>
         </section>
       </main>
