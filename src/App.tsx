@@ -44,6 +44,20 @@ const certifications = [
     credentialId: 'wnasgdrdx6t3',
     verifyUrl: 'https://verify.skilljar.com/c/wnasgdrdx6t3',
   },
+  {
+    name: 'IELTS',
+    issuer: 'IDP',
+    issued: 'Jul 21, 2021',
+    score: '7.0',
+    credentialId: '011322',
+  },
+  {
+    name: 'A Level Mathematics',
+    issuer: 'Cambridge Assessment International Education',
+    issued: 'Jun 2021',
+    score: 'A(a)',
+    credentialId: '0068801252',
+  },
 ]
 
 const press = [
@@ -277,6 +291,7 @@ function App() {
                   <li><strong>Pioneer Graduate</strong>: One of the first graduates of the prestigious Presidential School in Tashkent.</li>
                   <li><strong>STEAM Curriculum</strong>: Intensive study of Science, Technology, Engineering, Arts, and Mathematics following Cambridge standards.</li>
                   <li><strong>Silver Medalist</strong>: Awarded a Silver Medal upon graduation for exceptional academic achievement.</li>
+                  <li><strong>A Level Mathematics</strong>: A(a) | <strong>IELTS</strong>: 7.0</li>
                   <li>Journalism Club Volunteer: Contributed to school publications and media activities.</li>
                 </ul>
               </div>
@@ -361,10 +376,11 @@ function App() {
               <div className="cert-card" key={cert.credentialId}>
                 <div className="cert-header">
                   <h3>{cert.name}</h3>
-                  <span className="cert-issued">{cert.issued}</span>
+                  {cert.issued && <span className="cert-issued">{cert.issued}</span>}
                 </div>
                 <p className="cert-issuer">{cert.issuer}</p>
-                <p className="cert-id">Credential ID: {cert.credentialId}</p>
+                {cert.score && <p className="cert-id">Score: {cert.score}</p>}
+                {cert.credentialId && <p className="cert-id">Credential ID: {cert.credentialId}</p>}
                 {cert.verifyUrl && (
                   <a href={cert.verifyUrl} target="_blank" rel="noopener noreferrer" className="cert-verify-link">
                     <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
