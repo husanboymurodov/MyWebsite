@@ -16,6 +16,7 @@ const skills = [
   'REST APIs',
   'DevOps',
   'Google Cloud Platform (GCP)',
+  'Amazon Web Services (AWS)',
   'Docker',
   'CI/CD',
   'Git',
@@ -23,6 +24,7 @@ const skills = [
   'Hugging Face',
   'Machine Learning',
   'Automation',
+  'Clean Coding',
 ]
 
 const softSkills = [
@@ -34,7 +36,41 @@ const softSkills = [
   'Collaborative Teamwork',
 ]
 
+const certifications = [
+  {
+    name: 'Claude Code 101',
+    issuer: 'Anthropic Education',
+    issued: 'Jun 7, 2026',
+    credentialId: 'wnasgdrdx6t3',
+    verifyUrl: 'https://verify.skilljar.com/c/wnasgdrdx6t3',
+  },
+]
+
+const press = [
+  {
+    publication: 'Spot.uz',
+    title: 'Malayziyada o\'qish: Husan Boymurodovning tajribasi',
+    description: 'Featured in a Spot.uz news article sharing my journey of studying in Malaysia — covering the application process, scholarship experience, and advice for Uzbek students wanting to pursue education abroad.',
+    date: 'Dec 31, 2023',
+    url: 'https://www.spot.uz/oz/2023/12/31/study-in-malaysia/',
+    language: 'Uzbek',
+  },
+]
+
 const experience = [
+  {
+    role: 'Software Engineer Intern',
+    company: 'Artiselite Sdn Bhd',
+    location: 'Malaysia',
+    dates: 'May 2026 - Present',
+    points: [
+      'Design and develop backend modules and features following software engineering principles and best practices.',
+      'Write clean, testable code and participate in unit testing, debugging, and code reviews.',
+      'Assist in system analysis, technical documentation, and software requirement specifications.',
+      'Support the full software development lifecycle (SDLC) from design through deployment.',
+      'Collaborate with the engineering team to troubleshoot issues and deliver sprint deliverables on time.',
+    ],
+  },
   {
     role: 'Software Engineer Intern',
     company: 'AI Sales Dr Pte. Ltd.',
@@ -105,6 +141,8 @@ function App() {
             <li><a href="#projects">Projects</a></li>
             <li><a href="#volunteering">Volunteering</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#press">Press</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -119,19 +157,20 @@ function App() {
               
               <div className="section-copy" style={{ maxWidth: '800px', marginBottom: '2.5rem' }}>
                 <p>
-                  I am a final-year Computer Science student at Universiti Malaya specializing in backend systems and 
-                  full-stack development. I build scalable applications using TypeScript, Next.js, Node.js, and 
-                  Google Cloud Platform (GCP).
+                  I am a final-year Computer Science student at Universiti Malaya specializing in backend systems and
+                  full-stack development. I build scalable applications using TypeScript, Next.js, Node.js, and
+                  cloud platforms including GCP and AWS.
                 </p>
                 <p>
-                  Recently, as a Software Engineer Intern at AI Sales Dr, I engineered production APIs, managed cloud 
-                  infrastructure on GCP, and automated complex workflows with n8n to optimize business processes. 
-                  Beyond engineering, I have demonstrated leadership by coordinating multiple academic courses, 
-                  facilitating technical sessions and mentoring peers.
+                  Currently working as a Software Engineer Intern at Artiselite Sdn Bhd, where I design and develop
+                  backend modules, write clean testable code, and support the full SDLC from design through deployment.
+                  Previously at AI Sales Dr, I engineered production APIs, managed GCP infrastructure, and automated
+                  complex workflows with n8n.
                 </p>
                 <p>
-                  I focus on building efficient, high-performance systems and am currently seeking software engineering 
-                  roles where I can contribute to impactful, well-engineered solutions.
+                  Beyond engineering, I demonstrate leadership by coordinating academic courses, facilitating technical
+                  sessions, and mentoring peers. I focus on building efficient, high-performance systems that make a
+                  real impact.
                 </p>
               </div>
 
@@ -298,12 +337,64 @@ function App() {
           </div>
         </section>
 
+        <section id="certifications">
+          <p className="section-label">Certifications</p>
+          <h2>Licenses &amp; Certifications</h2>
+          <div className="certs-grid">
+            {certifications.map((cert) => (
+              <div className="cert-card" key={cert.credentialId}>
+                <div className="cert-header">
+                  <h3>{cert.name}</h3>
+                  <span className="cert-issued">{cert.issued}</span>
+                </div>
+                <p className="cert-issuer">{cert.issuer}</p>
+                <p className="cert-id">Credential ID: {cert.credentialId}</p>
+                {cert.verifyUrl && (
+                  <a href={cert.verifyUrl} target="_blank" rel="noopener noreferrer" className="cert-verify-link">
+                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                    Verify credential
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="press">
+          <p className="section-label">In the Press</p>
+          <h2>Media &amp; Features</h2>
+          <div className="press-grid">
+            {press.map((item) => (
+              <a
+                key={item.url}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="press-card"
+              >
+                <div className="press-header">
+                  <span className="press-pub">{item.publication}</span>
+                  <span className="press-meta">
+                    {item.date}
+                    {item.language && <span className="press-lang">{item.language}</span>}
+                  </span>
+                </div>
+                <h3 className="press-title">{item.title}</h3>
+                <p className="press-desc">{item.description}</p>
+                <span className="press-read">
+                  Read article
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+
         <section id="contact">
           <p className="section-label">Contact</p>
           <h2>Get In Touch</h2>
           <p className="contact-intro">
-            Open to software engineering internships, full-stack development roles, data projects,
-            and automation work from May 2026.
+            Open to collaboration, freelance projects, and connecting with fellow engineers.
           </p>
           <div className="contact-links">
             <a href="mailto:husayin2003@gmail.com">Email</a>

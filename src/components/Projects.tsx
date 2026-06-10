@@ -1,8 +1,23 @@
 const projects = [
   {
+    name: 'Instagram Viewer & Blocker',
+    description: 'Chrome and Firefox extension to view any Instagram profile and block any account — even ones that have already blocked you.',
+    details: [
+      'Bypasses Instagram block relationships via anonymous API fallbacks that strip session cookies.',
+      '3 profile lookup methods and 5 user ID resolution methods as cascading fallbacks for reliability.',
+      'One-click block from active tab URL with silent background ID resolution.',
+      'Self-block prevention and no external server — all requests go directly to Instagram.',
+      'Published on Chrome Web Store and Mozilla Add-ons.',
+    ],
+    tags: ['JavaScript', 'Chrome Extension', 'Firefox Extension', 'Manifest V3', 'Instagram API'],
+    links: [
+      { url: 'https://github.com/husanboymurodov/instagram-viewer-blocker', label: 'GitHub' },
+      { url: 'https://chromewebstore.google.com/detail/instagram-viewer-blocker/mhhokaaoppcilkeekdfokjdpfhfinmpn', label: 'Chrome' },
+      { url: 'https://addons.mozilla.org/addon/instagram-viewer-blocker/', label: 'Firefox' },
+    ]
+  },
+  {
     name: 'MyWebsite – Software Engineer Portfolio',
-    role: 'Full Stack Developer',
-    period: '2026',
     description: 'A modern, high-performance portfolio website built to showcase engineering projects and professional experience.',
     details: [
       'Developed a responsive, accessible frontend using React 19 and TypeScript.',
@@ -18,8 +33,6 @@ const projects = [
   },
   {
     name: 'FitHub – Full-Stack Fitness Tracker',
-    role: 'Full Stack Developer',
-    period: '2024 - 2025',
     description: 'A comprehensive health and wellness platform designed to help users track workouts, plan nutrition, and monitor long-term progress.',
     details: [
       'Developed a robust MVC application using Express.js and MongoDB.',
@@ -36,8 +49,6 @@ const projects = [
   },
   {
     name: 'OrderSmart – ML Delivery Predictor',
-    role: 'Machine Learning Engineer',
-    period: '2024 - 2025',
     description: 'A machine learning-powered predictive analytics dashboard that forecasts food delivery performance based on environmental and logistical factors.',
     details: [
       'Engineered and trained an XGBoost model to predict delivery delays.',
@@ -54,10 +65,7 @@ const projects = [
   },
   {
     name: 'Customer Churn Prediction Model',
-    role: 'Data Scientist',
-    period: 'Mar 2024 - Jun 2024',
-    description:
-      'Built a classification model to identify at-risk telecom customers and support retention analysis.',
+    description: 'Built a classification model to identify at-risk telecom customers and support retention analysis.',
     details: [
       'Cleaned and prepared large-scale datasets before model training.',
       'Trained and evaluated Logistic Regression and XGBoost classification models.',
@@ -77,10 +85,6 @@ const Projects = () => {
         const projectSlug = project.name.split(' ')[0].toLowerCase().replace(/[^a-z0-9]/g, '');
         return (
           <article key={project.name} id={projectSlug} className="project-card">
-            <div className="project-topline">
-              <span>{project.role}</span>
-              <span>{project.period}</span>
-            </div>
             <h3 className="project-title">{project.name}</h3>
             <p className="project-desc">{project.description}</p>
             <ul className="project-details">
@@ -88,7 +92,7 @@ const Projects = () => {
                 <li key={idx}>{detail}</li>
               ))}
             </ul>
-            
+
             <div className="project-tags" aria-label={`${project.name} technologies`}>
               {project.tags.map((tag) => (
                 <span key={tag}>{tag}</span>
