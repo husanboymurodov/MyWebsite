@@ -87,11 +87,6 @@ const Projects = () => {
           <article key={project.name} id={projectSlug} className="project-card">
             <h3 className="project-title">{project.name}</h3>
             <p className="project-desc">{project.description}</p>
-            <ul className="project-details">
-              {project.details.map((detail, idx) => (
-                <li key={idx}>{detail}</li>
-              ))}
-            </ul>
 
             <div className="project-tags" aria-label={`${project.name} technologies`}>
               {project.tags.map((tag) => (
