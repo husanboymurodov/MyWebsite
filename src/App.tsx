@@ -60,8 +60,8 @@ const press = [
 const experience = [
   {
     role: 'Software Engineer Intern',
-    company: 'Artiselite Sdn Bhd',
-    location: 'Malaysia',
+    company: 'Artiselite Sdn. Bhd.',
+    location: 'Kuala Lumpur, Malaysia',
     dates: 'May 2026 - Present',
     points: [
       'Design and develop backend modules and features following software engineering principles and best practices.',
@@ -74,7 +74,7 @@ const experience = [
   {
     role: 'Software Engineer Intern',
     company: 'AI Sales Dr Pte. Ltd.',
-    location: 'Singapore (Remote)',
+    location: 'Kuala Lumpur, Malaysia',
     dates: 'Feb 2026 - May 2026',
     points: [
       'Engineered and maintained scalable full-stack web applications using JavaScript/TypeScript, Next.js, and Node.js.',
