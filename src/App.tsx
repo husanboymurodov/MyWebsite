@@ -65,7 +65,7 @@ const press = [
     publication: 'El-Yurt Umidi Foundation',
     title: 'Uzbek Team Wins International Cultural Week at Universiti Malaya',
     description: 'Featured in an El-Yurt Umidi Foundation post recognizing the Uzbek student team\'s first-place win at the International Cultural Week at Universiti Malaya. Competing against 30+ countries, the team — including Husan Boymurodov — won the "Most Creative Menu" award, showcasing Uzbek cuisine, traditions, and hospitality.',
-    date: '2024',
+    date: 'Nov 5, 2025',
     url: 'https://t.me/elyurtumidifoundation/15058',
     language: 'Uzbek',
   },
