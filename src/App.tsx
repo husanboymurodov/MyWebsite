@@ -48,6 +48,14 @@ const certifications = [
 
 const press = [
   {
+    publication: 'El-Yurt Umidi Foundation',
+    title: 'Uzbek Team Wins International Cultural Week at Universiti Malaya',
+    description: 'Featured in an El-Yurt Umidi Foundation post recognizing the Uzbek student team\'s first-place win at the International Cultural Week at Universiti Malaya. Competing against 30+ countries, the team — including Husan Boymurodov — won the "Most Creative Menu" award, showcasing Uzbek cuisine, traditions, and hospitality.',
+    date: '2024',
+    url: 'https://t.me/elyurtumidifoundation/15058',
+    language: 'Uzbek',
+  },
+  {
     publication: 'Spot.uz',
     title: 'Malayziyada o\'qish: Husan Boymurodovning tajribasi',
     description: 'Featured in a Spot.uz news article sharing my journey of studying in Malaysia — covering the application process, scholarship experience, and advice for Uzbek students wanting to pursue education abroad.',
@@ -61,6 +69,7 @@ const experience = [
   {
     role: 'Software Engineer Intern',
     company: 'Artiselite Sdn. Bhd.',
+    companyUrl: 'https://www.artiselite.net/',
     location: 'Kuala Lumpur, Malaysia',
     dates: 'May 2026 - Present',
     points: [
@@ -74,6 +83,7 @@ const experience = [
   {
     role: 'Software Engineer Intern',
     company: 'AI Sales Dr Pte. Ltd.',
+    companyUrl: 'https://ai-sales-dr.co/',
     location: 'Kuala Lumpur, Malaysia',
     dates: 'Feb 2026 - May 2026',
     points: [
@@ -86,6 +96,7 @@ const experience = [
   {
     role: 'Information Technology Intern',
     company: 'British Management University',
+    companyUrl: 'https://www.bmu-edu.uz/',
     location: 'Tashkent, Uzbekistan',
     dates: 'Mar 2022 - Jul 2022',
     points: [
@@ -197,8 +208,8 @@ function App() {
             {/* University of Malaya */}
             <div className="education-item section-grid">
               <div>
-                <h3>University of Malaya</h3>
-                <div className="ranking-badge">
+                <h3><a href="https://www.um.edu.my/" target="_blank" rel="noopener noreferrer" className="inst-link">University of Malaya</a></h3>
+                <a href="https://www.topuniversities.com/universities/universiti-malaya-um" target="_blank" rel="noopener noreferrer" className="ranking-badge">
                   <div className="ranking-icon">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 15l-2 5L9 9l11 4-5 2zm0 0l4 5 1-11L3 11l5 2z"/></svg>
                   </div>
@@ -206,7 +217,7 @@ function App() {
                     <span className="rank-value">#58 Worldwide</span>
                     <span className="rank-source">QS World Rankings 2026</span>
                   </div>
-                </div>
+                </a>
                 <div className="scholarship-tag">
                   <span className="star-icon">★</span>
                   <span>EYUF Scholarship Holder</span>
@@ -229,7 +240,7 @@ function App() {
             {/* BMU */}
             <div className="education-item section-grid" style={{ marginTop: '2rem' }}>
               <div>
-                <h3>British Management University</h3>
+                <h3><a href="https://www.bmu-edu.uz/" target="_blank" rel="noopener noreferrer" className="inst-link">British Management University</a></h3>
                 <div className="scholarship-tag">
                   <span className="star-icon">★</span>
                   <span>Full Scholarship</span>
@@ -282,7 +293,12 @@ function App() {
                 <div className="timeline-heading">
                   <div>
                     <h3>{item.role}</h3>
-                    <p>{item.company} | {item.location}</p>
+                    <p>
+                      {item.companyUrl
+                        ? <a href={item.companyUrl} target="_blank" rel="noopener noreferrer" className="inst-link">{item.company}</a>
+                        : item.company
+                      } | {item.location}
+                    </p>
                   </div>
                   <span>{item.dates}</span>
                 </div>

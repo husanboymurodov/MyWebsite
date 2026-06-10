@@ -726,6 +726,19 @@ h2 {
   gap: 10px;
 }
 
+.inst-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--border-color);
+  text-underline-offset: 3px;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+.inst-link:hover {
+  color: var(--accent-color);
+  text-decoration-color: var(--accent-color);
+}
+
 .contact-intro {
   max-width: 720px;
   color: var(--text-muted);

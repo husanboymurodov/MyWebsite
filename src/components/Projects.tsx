@@ -7,7 +7,7 @@ const projects = [
       '3 profile lookup methods and 5 user ID resolution methods as cascading fallbacks for reliability.',
       'One-click block from active tab URL with silent background ID resolution.',
       'Self-block prevention and no external server — all requests go directly to Instagram.',
-      'Published on Chrome Web Store and Mozilla Add-ons.',
+      'Published on Chrome Web Store (35 installs, 6 weekly users) and Mozilla Add-ons (4 weekly downloads) with users across the US, Uzbekistan, and Malaysia.',
     ],
     tags: ['JavaScript', 'Chrome Extension', 'Firefox Extension', 'Manifest V3', 'Instagram API'],
     links: [
