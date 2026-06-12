@@ -1,23 +1,16 @@
 const projects = [
   {
     name: 'Instagram Viewer & Blocker',
-    description: 'Chrome and Firefox extension to view any Instagram profile and block any account — even ones that have already blocked you.',
-    details: [
-      'Bypasses Instagram block relationships via anonymous API fallbacks that strip session cookies.',
-      '3 profile lookup methods and 5 user ID resolution methods as cascading fallbacks for reliability.',
-      'One-click block from active tab URL with silent background ID resolution.',
-      'Self-block prevention and no external server — all requests go directly to Instagram.',
-      'Published on Chrome Web Store (35 installs, 6 weekly users) and Mozilla Add-ons (4 weekly downloads) with users across the US, Uzbekistan, and Malaysia.',
-    ],
-    tags: ['JavaScript', 'Chrome Extension', 'Firefox Extension', 'Manifest V3', 'Instagram API'],
+    description: 'Firefox extension to view any Instagram profile and block any account — even ones that have already blocked you.',
+    details: [],
+    tags: [],
     links: [
       { url: 'https://github.com/husanboymurodov/instagram-viewer-blocker', label: 'GitHub' },
-      { url: 'https://chromewebstore.google.com/detail/instagram-viewer-blocker/mhhokaaoppcilkeekdfokjdpfhfinmpn', label: 'Chrome' },
       { url: 'https://addons.mozilla.org/addon/instagram-viewer-blocker/', label: 'Firefox' },
     ]
   },
   {
-    name: 'MyWebsite – Software Engineer Portfolio',
+    name: 'boymurodov.com',
     description: 'A modern, high-performance portfolio website built to showcase engineering projects and professional experience.',
     details: [
       'Developed a responsive, accessible frontend using React 19 and TypeScript.',
@@ -87,12 +80,6 @@ const Projects = () => {
           <article key={project.name} id={projectSlug} className="project-card">
             <h3 className="project-title">{project.name}</h3>
             <p className="project-desc">{project.description}</p>
-
-            <div className="project-tags" aria-label={`${project.name} technologies`}>
-              {project.tags.map((tag) => (
-                <span key={tag}>{tag}</span>
-              ))}
-            </div>
 
             {project.links && project.links.length > 0 && (
               <div className="project-links">
