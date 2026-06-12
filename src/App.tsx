@@ -29,7 +29,7 @@ const experience = [
     location: 'Kuala Lumpur, Malaysia',
     dates: 'May 2026 - Present',
     points: [
-      'Building ITSM modules — incident management, service catalogue, approval workflows, and a self-service portal — on FastAPI, SvelteKit, and PostgreSQL.',
+      'Building ITSM modules — incident management, service catalogue, approval workflows, and a self-service portal — on FastAPI, SvelteKit, and PostgreSQL',
     ],
   },
   {
@@ -39,8 +39,8 @@ const experience = [
     location: 'Kuala Lumpur, Malaysia',
     dates: 'Feb 2026 - May 2026',
     points: [
-      'Owned the full-stack TypeScript/Next.js, Python/FastAPI, and Supabase/PostgreSQL codebase.',
-      'Assisted in optimizing n8n automation workflows.',
+      'Owned the full-stack TypeScript/Next.js, Python/FastAPI, and Supabase/PostgreSQL codebase',
+      'Assisted in optimizing n8n automation workflows',
     ],
   },
   {
@@ -50,9 +50,9 @@ const experience = [
     location: 'Tashkent, Uzbekistan',
     dates: 'Mar 2022 - Jul 2022',
     points: [
-      'Improved and maintained the university website using WordPress.',
-      'Volunteered at administrative meetings on IT and communications.',
-      'Helped faculty with printers, laptops, and other multimedia devices.',
+      'Improved and maintained the university website using WordPress',
+      'Volunteered at administrative meetings on IT and communications',
+      'Helped faculty with printers, laptops, and other multimedia devices',
     ],
   },
 ]
@@ -121,7 +121,7 @@ function App() {
                 </div>
                 <ul>
                   <li>CGPA: 3.26</li>
-                  <li>Extracurriculars: Gold Medalist, 2025 MIQ Taekwondo Championship, Lightweight 18-35.</li>
+                  <li>Extracurriculars: Gold Medalist, 2025 MIQ Taekwondo Championship, Lightweight 18-35</li>
                 </ul>
               </div>
             </div>
@@ -137,8 +137,8 @@ function App() {
                   <span>2021 - 2022</span>
                 </div>
                 <ul>
-                  <li>CGPA: 3.85 — Silver stipend awarded for Academic Merit.</li>
-                  <li>Extracurriculars: Toastmasters club public speaker.</li>
+                  <li>CGPA: 3.85 — Silver stipend awarded for Academic Merit</li>
+                  <li>Extracurriculars: Toastmasters club public speaker</li>
                 </ul>
               </div>
             </div>
@@ -154,7 +154,7 @@ function App() {
                   <span>2019 - 2021</span>
                 </div>
                 <ul>
-                  <li>Silver Medal awarded for Academic Merit.</li>
+                  <li>Studied STEAM curriculum. Enjoyed Math, History and Literature</li>
                 </ul>
               </div>
             </div>
