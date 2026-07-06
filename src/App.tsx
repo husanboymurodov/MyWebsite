@@ -95,7 +95,7 @@ function App() {
                 <a href="https://www.linkedin.com/in/husanboymurodov/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
                 <a href="https://t.me/HusanBoymurodov" target="_blank" rel="noopener noreferrer" className="btn-secondary">Telegram</a>
                 <a href="https://wa.me/601161337608" target="_blank" rel="noopener noreferrer" className="btn-secondary">WhatsApp</a>
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">Résumé</a>
+                <a href="/Husan_Boymurodov_CV.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">CV</a>
               </div>
             </div>
             
