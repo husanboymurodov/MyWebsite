@@ -93,7 +93,7 @@ function App() {
               <div className="about-actions">
                 <a href="https://github.com/husanboymurodov" target="_blank" rel="noopener noreferrer" className="btn-secondary">GitHub</a>
                 <a href="https://www.linkedin.com/in/husanboymurodov/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
-                <a href="https://t.me/HusanBoymurodov" target="_blank" rel="noopener noreferrer" className="btn-secondary">Telegram</a>
+                <a href="https://t.me/BoymurodovHusan" target="_blank" rel="noopener noreferrer" className="btn-secondary">Telegram</a>
                 <a href="https://wa.me/601161337608" target="_blank" rel="noopener noreferrer" className="btn-secondary">WhatsApp</a>
                 <a href="/Husan_Boymurodov_CV.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">CV</a>
               </div>
@@ -227,7 +227,7 @@ function App() {
           <div className="contact-links">
             <a href="mailto:husayin2003@gmail.com">Email</a>
             <a href="https://wa.me/601161337608" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-            <a href="https://t.me/HusanBoymurodov" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://t.me/BoymurodovHusan" target="_blank" rel="noopener noreferrer">Telegram</a>
           </div>
         </section>
       </main>
