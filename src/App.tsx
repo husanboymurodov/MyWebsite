@@ -29,7 +29,10 @@ const experience = [
     location: 'Kuala Lumpur, Malaysia',
     dates: 'May 2026 - Present',
     points: [
-      'Building ITSM modules — incident management, service catalogue, approval workflows, and a self-service portal — on FastAPI, SvelteKit, and PostgreSQL',
+      'Built six IT Service Management (ITSM) modules end-to-end — incident management, service catalogue, knowledge base, problem management, business units, and approval workflows — on FastAPI, SQLAlchemy, and PostgreSQL with a SvelteKit front end.',
+      'Delivered the REST routers, service-layer logic, Alembic migrations, and Celery/Redis background jobs behind those modules, covered by HTTP-level pytest suites and deployed to AWS EC2 via Docker Compose and SSH.',
+      'Delivered full-stack customizations to the Myttem OS ERP (Django, Celery, Redis backend; SvelteKit front end) — free-text delivery-order PO numbers, service-request–optional invoicing, and a customer-reference field on quotations — spanning serializers, models, database migrations, Svelte UI, and regression tests.',
+      'Refactored the multi-tenant Django procurement workflow (Purchase Request to RFQ to supplier quotes to Purchase Order) and resolved a blocking migration-graph conflict; authored and maintained JasperReports (JRXML) templates for client-branded quotation and delivery-order PDFs; hardened continuous integration by clearing the Ruff (391 violations to 0) and pytest (52 failures to 0) suites.',
     ],
   },
   {
@@ -66,8 +69,8 @@ function App() {
           <a className="logo" href="#about" aria-label="Husan Boymurodov home">HB</a>
           <ul className="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#press">Press</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -80,13 +83,13 @@ function App() {
           <div className="about-content">
             <div className="about-text">
               <h1>Hi, I'm Husan Boymurodov</h1>
-              <p className="tagline">Currently an SWE intern.</p>
 
               <div className="section-copy" style={{ maxWidth: '800px', marginBottom: '2.5rem' }}>
                 <p>
-                  I work across the full stack — Python and TypeScript mostly, with Next.js, FastAPI, Node.js,
-                  Supabase, and PostgreSQL. More of a Python person. Also do some GCP infrastructure and the
-                  occasional n8n workflow, though I prefer just writing code.
+                  Full-stack software engineer building products across
+                  Python (FastAPI, Django) and TypeScript (SvelteKit, Next.js) on PostgreSQL. Experienced in REST
+                  APIs, multi-tenant architecture, service-layer design, Celery/Redis background jobs, database
+                  migrations, automated testing, and Docker-based deployments to AWS and GCP.
                 </p>
               </div>
 
@@ -105,9 +108,36 @@ function App() {
           </div>
         </section>
 
+        <section id="experience">
+          <h2>Experience</h2>
+          <div className="timeline">
+            {experience.map((item) => (
+              <article className="timeline-item" key={`${item.role}-${item.company}`}>
+                <div className="timeline-heading">
+                  <div>
+                    <h3>{item.role}</h3>
+                    <p>
+                      {item.companyUrl
+                        ? <a href={item.companyUrl} target="_blank" rel="noopener noreferrer" className="inst-link">{item.company}</a>
+                        : item.company
+                      } | {item.location}
+                    </p>
+                  </div>
+                  <span>{item.dates}</span>
+                </div>
+                <ul>
+                  {item.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section id="education">
           <h2>Education</h2>
-          
+
           <div className="education-timeline">
             {/* University of Malaya */}
             <div className="education-item section-grid">
@@ -120,7 +150,7 @@ function App() {
                   <span>2023 - 2026</span>
                 </div>
                 <ul>
-                  <li>CGPA: 3.26</li>
+                  <li>CGPA: 3.39</li>
                   <li>Extracurriculars: Gold Medalist, 2025 MIQ Taekwondo Championship, Lightweight 18-35</li>
                 </ul>
               </div>
@@ -158,33 +188,6 @@ function App() {
                 </ul>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section id="experience">
-          <h2>Experience</h2>
-          <div className="timeline">
-            {experience.map((item) => (
-              <article className="timeline-item" key={`${item.role}-${item.company}`}>
-                <div className="timeline-heading">
-                  <div>
-                    <h3>{item.role}</h3>
-                    <p>
-                      {item.companyUrl
-                        ? <a href={item.companyUrl} target="_blank" rel="noopener noreferrer" className="inst-link">{item.company}</a>
-                        : item.company
-                      } | {item.location}
-                    </p>
-                  </div>
-                  <span>{item.dates}</span>
-                </div>
-                <ul>
-                  {item.points.map((point) => (
-                    <li key={point}>{point}</li>
-                  ))}
-                </ul>
-              </article>
-            ))}
           </div>
         </section>
 
