@@ -1,7 +1,7 @@
 const projects = [
   {
-    name: 'KadiArch – Interactive Pumpkin Peeling Simulator',
-    description: 'A playful, physics-based web simulator showcasing a custom-designed device for safely peeling Uzbek "kadi" pumpkins, with realistic canvas rendering and synthesized audio.',
+    name: 'KadiArch',
+    description: 'A goofy browser sim where you test-drive a custom rig to peel tough Uzbek pumpkins without losing a finger. Built with crunchy sound effects.',
     details: [
       'Rendered an organic pumpkin silhouette using Catmull-Rom splines for natural, tapered contours.',
       'Built a canvas-based peeling interaction with pointer tracking, particle-based peel ribbons, and pixel-sampled completion detection.',
