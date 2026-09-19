@@ -1,5 +1,20 @@
 const projects = [
   {
+    name: 'KadiArch – Interactive Pumpkin Peeling Simulator',
+    description: 'A playful, physics-based web simulator showcasing a custom-designed device for safely peeling Uzbek "kadi" pumpkins, with realistic canvas rendering and synthesized audio.',
+    details: [
+      'Rendered an organic pumpkin silhouette using Catmull-Rom splines for natural, tapered contours.',
+      'Built a canvas-based peeling interaction with pointer tracking, particle-based peel ribbons, and pixel-sampled completion detection.',
+      'Synthesized realistic knife-cutting sound effects in real time with the Web Audio API — no audio files.',
+      'Containerized with Docker and deployed to Google Cloud Run.'
+    ],
+    tags: ['JavaScript', 'Canvas API', 'Web Audio API', 'Docker', 'Google Cloud Run'],
+    links: [
+      { url: 'https://github.com/husanboymurodov/kadi-peeler', label: 'GitHub' },
+      { url: 'https://kadi-peeler-745483922277.asia-southeast1.run.app', label: 'Live App' }
+    ]
+  },
+  {
     name: 'Instagram Viewer & Blocker',
     description: 'Firefox extension to view any Instagram profile and block any account — even ones that have already blocked you.',
     details: [],
