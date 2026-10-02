@@ -87,10 +87,11 @@ function App() {
 
               <div className="section-copy" style={{ maxWidth: '800px', marginBottom: '2.5rem' }}>
                 <p>
-                  Full-stack software engineer building products across
-                  Python (FastAPI, Django) and TypeScript (SvelteKit, Next.js) on PostgreSQL. Experienced in REST
-                  APIs, multi-tenant architecture, service-layer design, Celery/Redis background jobs, database
-                  migrations, automated testing, and Docker-based deployments to AWS and GCP.
+                  Full-stack software engineer building production systems in Python (Django Ninja, FastAPI)
+                  and TypeScript (SvelteKit, Next.js) on PostgreSQL. Shipped an asset-integrity platform for
+                  oil &amp; gas clients that replaced a 264 MB Excel workflow, with Celery/Redis background jobs,
+                  multi-tenant architecture, 800+ automated tests, and zero-downtime Docker deployments to
+                  AWS and GCP.
                 </p>
               </div>
 
