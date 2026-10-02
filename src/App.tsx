@@ -29,10 +29,11 @@ const experience = [
     location: 'Kuala Lumpur, Malaysia',
     dates: 'May 2026 - Present',
     points: [
-      'Built six IT Service Management (ITSM) modules end-to-end — incident management, service catalogue, knowledge base, problem management, business units, and approval workflows — on FastAPI, SQLAlchemy, and PostgreSQL with a SvelteKit front end.',
-      'Delivered the REST routers, service-layer logic, Alembic migrations, and Celery/Redis background jobs behind those modules, covered by HTTP-level pytest suites and deployed to AWS EC2 via Docker Compose and SSH.',
-      'Delivered full-stack customizations to the Myttem OS ERP (Django, Celery, Redis backend; SvelteKit front end) — free-text delivery-order PO numbers, service-request–optional invoicing, and a customer-reference field on quotations — spanning serializers, models, database migrations, Svelte UI, and regression tests.',
-      'Refactored the multi-tenant Django procurement workflow (Purchase Request to RFQ to supplier quotes to Purchase Order) and resolved a blocking migration-graph conflict; authored and maintained JasperReports (JRXML) templates for client-branded quotation and delivery-order PDFs; hardened continuous integration by clearing the Ruff (391 violations to 0) and pytest (52 failures to 0) suites.',
+      'Replaced a 264 MB Excel workflow with a production-grade asset integrity platform for Corroserv and enterprise oil & gas clients (Django Ninja, PostgreSQL, Celery/Redis, SvelteKit).',
+      'Robust Data Ingestion & Export: Built resilient ETL pipelines handling complex, 35-column anomaly spreadsheets and multi-photo uploads, featuring automatic schema resolution, cell-anchored Excel photo exports, and universal in-app document previews.',
+      'Automated QA/QC Inspections: Created a multi-cycle post-repair inspection engine that automates pass/fail grading across 5 core composite parameters (surface profile, DFT, hardness, etc.), complete with automated summary reports and QR-verifiable warranty certificates.',
+      'ITSM & Enterprise Integrations: Developed six core ITSM modules using FastAPI and SvelteKit with SLA tracking, while modernizing ERP procurement, general ledger accounting, and JasperReports PDF generation.',
+      'DevOps & Reliability: Automated zero-downtime Docker deployments to AWS (EC2/ECR) via GitHub Actions, establishing full test suites (800+ pytests and vitests) that eliminated regression downtime.',
     ],
   },
   {
