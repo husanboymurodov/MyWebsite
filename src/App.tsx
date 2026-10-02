@@ -147,7 +147,7 @@ function App() {
               <div className="education-card">
                 <div className="education-card-header">
                   <h4>Bachelor of Computer Science, Information Systems</h4>
-                  <span>2023 - 2026</span>
+                  <span>2022 - 2026</span>
                 </div>
                 <ul>
                   <li>CGPA: 3.39</li>
@@ -185,6 +185,7 @@ function App() {
                 </div>
                 <ul>
                   <li>Studied STEAM curriculum. Enjoyed Math, History and Literature</li>
+                  <li>A Levels: Mathematics, Physics and Computer Science</li>
                 </ul>
               </div>
             </div>

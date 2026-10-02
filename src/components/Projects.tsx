@@ -1,5 +1,18 @@
 const projects = [
   {
+    name: 'AI Sales DR',
+    description: 'An AI-powered lead generation web app that helps revenue teams turn inbound interest into qualified, booked meetings.',
+    details: [
+      'Built a full-stack app with a separate frontend and backend service, backed by Supabase.',
+      'Integrated Groq LLMs for AI-driven lead qualification and Gmail for outreach emails.',
+      'Containerized both services with Docker and deployed them to Google Cloud Run.'
+    ],
+    tags: ['Next.js', 'Supabase', 'Groq', 'Docker', 'Google Cloud Run'],
+    links: [
+      { url: 'https://ai-sales-dr-frontend-745483922277.asia-southeast1.run.app', label: 'Live App' }
+    ]
+  },
+  {
     name: 'KadiArch',
     description: 'A goofy browser sim where you test-drive a custom rig to peel tough Uzbek pumpkins without losing a finger. Built with crunchy sound effects.',
     details: [
