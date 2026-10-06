@@ -13,21 +13,6 @@ const projects = [
     ]
   },
   {
-    name: 'KadiArch',
-    description: 'A goofy browser sim where you test-drive a custom rig to peel tough Uzbek pumpkins without losing a finger. Built with crunchy sound effects.',
-    details: [
-      'Rendered an organic pumpkin silhouette using Catmull-Rom splines for natural, tapered contours.',
-      'Built a canvas-based peeling interaction with pointer tracking, particle-based peel ribbons, and pixel-sampled completion detection.',
-      'Synthesized realistic knife-cutting sound effects in real time with the Web Audio API — no audio files.',
-      'Containerized with Docker and deployed to Google Cloud Run.'
-    ],
-    tags: ['JavaScript', 'Canvas API', 'Web Audio API', 'Docker', 'Google Cloud Run'],
-    links: [
-      { url: 'https://github.com/husanboymurodov/kadi-peeler', label: 'GitHub' },
-      { url: 'https://kadi-peeler-745483922277.asia-southeast1.run.app', label: 'Live App' }
-    ]
-  },
-  {
     name: 'Instagram Viewer & Blocker',
     description: 'Firefox extension to view any Instagram profile and block any account — even ones that have already blocked you.',
     details: [],
@@ -35,21 +20,6 @@ const projects = [
     links: [
       { url: 'https://github.com/husanboymurodov/instagram-viewer-blocker', label: 'GitHub' },
       { url: 'https://addons.mozilla.org/addon/instagram-viewer-blocker/', label: 'Firefox' },
-    ]
-  },
-  {
-    name: 'boymurodov.com',
-    description: 'A modern, high-performance portfolio website built to showcase engineering projects and professional experience.',
-    details: [
-      'Developed a responsive, accessible frontend using React 19 and TypeScript.',
-      'Implemented a sleek dark theme with CSS variables and smooth interactive animations.',
-      'Configured containerized deployment using Docker and Google Cloud Run with automated CI/CD.',
-      'Optimized site for SEO and performance, achieving near-perfect scores on Lighthouse.'
-    ],
-    tags: ['React', 'TypeScript', 'Vite', 'Docker', 'Google Cloud Run', 'CSS'],
-    links: [
-      { url: 'https://github.com/husanboymurodov/MyWebsite', label: 'GitHub' },
-      { url: 'https://boymurodov.com', label: 'Live App' }
     ]
   },
   {
